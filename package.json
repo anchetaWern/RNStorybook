@@ -1,0 +1,52 @@
+{
+  "name": "RNStorybook",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.4.8",
+    "@storybook/addon-links": "^3.4.8",
+    "@storybook/addon-storyshots": "^3.4.8",
+    "@storybook/addons": "^3.4.8",
+    "@storybook/react-native": "^3.4.8",
+    "babel-core": "^6.26.3",
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "babel-runtime": "^6.26.0",
+    "jest": "^23.4.2",
+    "jest-react-native": "^18.0.0",
+    "react-dom": "16.3.1",
+    "react-native-mock": "^0.3.1",
+    "react-native-storybook-loader": "^1.8.0",
+    "react-test-renderer": "16.3.1"
+  },
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "test": "jest",
+    "storybook": "storybook start -p 7007",
+    "prestorybook": "rnstl"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleNameMapper": {
+      "^.+\\.(jpg|jpeg)$": "RelativeImageStub",
+      ".+\\.(png)$": "jest-static-stubs/png"
+    }
+  },
+  "dependencies": {
+    "jest-static-stubs": "^0.0.1",
+    "prop-types": "^15.6.2",
+    "react": "16.3.1",
+    "react-native": "~0.55.2",
+    "react-native-vector-icons": "^5.0.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": ["./src/stories"],
+      "pattern": "**/*.story.js",
+      "outputFile": "./storybook/storyLoader.js"
+    }
+  }
+}
