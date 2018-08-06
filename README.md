@@ -2,6 +2,8 @@
 
 A sample React Native project which uses [Storybook](https://storybook.js.org/).
 
+You can read the full tutorial at: [https://pusher.com/tutorials/storybook-react-native](https://pusher.com/tutorials/storybook-react-native)
+
 _Note: the React Native code in this repo may be a little bit outdated and won't run immediately after you've followed the setup instructions. Be sure to refactor the code to use the more recent React Native syntax if it doesn't run for you._
 
 ## Prerequisites
