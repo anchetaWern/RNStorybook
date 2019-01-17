@@ -24,6 +24,7 @@ git clone https://github.com/anchetaWern/RNStorybook.git
 ```
 cd RNStorybook
 yarn install
+react-native eject
 ```
 
 3.  Run the app:
